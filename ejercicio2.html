@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Output</title>
+</head>
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarNombre()">Mostrar mi nombre</button>
+
+    <p id="parrafo"></p>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <script>
+        console.log("La página se cargó correctamente");
+
+        function mostrarNombre() {
+            alert("Ricardo Ramos");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("parrafo").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+    </script>
+</body>
+</html>
